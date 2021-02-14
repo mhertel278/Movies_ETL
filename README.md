@@ -10,3 +10,5 @@ The purpose of this project is to extract, transform, and load data about variou
 I then performed similar cleaning tasks on a csv file of movie metadata from from MovieLens and merged the kaggle and wikipedia movies dataframes.  I cleaned the merged dataframes by consolidating data from similar columns and dropping duplicate columns.  I then created a dataframed of ratings fore each movie pulled from a csv file also compiled by MovieLens.  This dataframe was merged into the existing dataframe of wiki and kaggle data.
 
 Finally, I exported the merged movies_df and the ratings.csv to a SQL database for use in the hackathon.
+
+I then refactored the code used to transform and clean all the data into a more concise function that could be used to extract, transform, and load data from these same sources for potential use for future hackathons.
