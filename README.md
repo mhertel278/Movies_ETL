@@ -1,7 +1,7 @@
 # Movies_ETL
 
 ## Resources
-Python 3.7.9, jupyeter notebook 6.1.4, postgreSQL 11.10, pgAdmin 4.29
+Python 3.7.9, jupyeter notebook 6.1.4, postgreSQL 11.10, pgAdmin 4.29, SQLAlchemy
 
 ## Overview
 
@@ -11,4 +11,6 @@ I then performed similar cleaning tasks on a csv file of movie metadata from fro
 
 Finally, I exported the merged movies_df and the ratings.csv to a SQL database for use in the hackathon.
 
-I then refactored the code used to transform and clean all the data into a more concise function that could be used to extract, transform, and load data from these same sources for potential use for future hackathons.
+All of the exploratory cleaning, merging, and exporting to SQL are done in the Movies_ETL.ipynb file.
+
+I then refactored the code used to transform and clean all the data into a more concise function that could be used to extract, transform, and load data from these same sources for potential use for future hackathons.  That function is created in the ETL_create_database.ipynb file.
