@@ -11,6 +11,6 @@ I then performed similar cleaning tasks on a csv file of movie metadata from fro
 
 Finally, I exported the merged movies_df and the ratings.csv to a SQL database for use in the hackathon.
 
-All of the exploratory cleaning, merging, and exporting to SQL are done in the Movies_ETL.ipynb file.
+All of the exploratory cleaning, merging, and exporting to SQL are done in the ETL_create_database.ipynb file.
 
 I then refactored the code used to transform and clean all the data into a more concise function that could be used to extract, transform, and load data from these same sources for potential use for future hackathons.  That function is created in the ETL_create_database.ipynb file.
