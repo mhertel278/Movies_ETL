@@ -7,7 +7,7 @@ Python 3.7.9, jupyeter notebook 6.1.4, postgreSQL 11.10, pgAdmin 4.29, SQLAlchem
 
 The purpose of this project is to extract, transform, and load data about various movies from separate sources into a movies SQL database to make available for a hackathon.  I used a jupyter notebook to explore data scraped from the sidebars of movies' wikipedia pages into a JSON file.  Columns with equivalent data were combined, tv shows were dropped, null values dropped or replaced, data forms-such as dates in various formats and dollar amounts represented with words million or billion-were transformed and made more consistent, and data types were corrected.  Below is a sample of code used clean the "Length" column, which held the length of each movie listed in various text formats such as "1 hour 15 min" or "120 minutes", creating a new "running_time" column with length given in total minutes in with a numerica datatype.
 
-![running_time_clean_image]("Resources/running_time_clean.png")
+![running_time_clean_image](Resources/running_time_clean.png)
 
 From that cleaned data, a wiki_movies_df was created.  
 
