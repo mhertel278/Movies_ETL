@@ -27,8 +27,10 @@ I cleaned the merged dataframes by consolidating data from similar columns and d
 
 I then created a dataframed of ratings fore each movie pulled from a csv file also compiled by MovieLens.  This dataframe was merged into the existing dataframe of wiki and kaggle data.
 
-Finally, I exported the merged movies_df and the ratings.csv to a SQL database for use in the hackathon.
+Finally, I exported the merged movies_df and the ratings.csv to a SQL database for use in the hackathon.  The code used to connect to the database and export each dataframe to a table in the database is shown below:
 
-All of the exploratory cleaning, merging, and exporting to SQL are done in the ETL_create_database.ipynb file.
+![load_to_sql](Resources/to_sql.png)
+
+All of the exploratory cleaning, merging are done in the ETL_clean_kaggle_data.ipynb and ETL_clean_wiki_movies.ipynb files.
 
 I then refactored the code used to transform and clean all the data into a more concise function that could be used to extract, transform, and load data from these same sources for potential use for future hackathons.  That function is created in the ETL_create_database.ipynb file.
