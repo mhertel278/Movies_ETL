@@ -11,13 +11,21 @@ The purpose of this project is to extract, transform, and load data about variou
 
 From that cleaned data, a wiki_movies_df was created.  
 
-I then performed similar cleaning tasks on a csv file of movie metadata from from MovieLens and merged the kaggle and wikipedia movies dataframes.  The below image shows the code used to change datatypes in the kaggle dataset then merge the two dataframes:
+I then performed similar cleaning tasks on a csv file of movie metadata from from MovieLens and merged the kaggle and wikipedia movies dataframes.
+
+
+The below image shows the code used to change datatypes in the kaggle dataset then merge the two dataframes:
 
 ![clean_Kaggle_and_merge](Resources/data_types.png)
 
 
 
-I cleaned the merged dataframes by consolidating data from similar columns and dropping duplicate columns.  I then created a dataframed of ratings fore each movie pulled from a csv file also compiled by MovieLens.  This dataframe was merged into the existing dataframe of wiki and kaggle data.
+I cleaned the merged dataframes by consolidating data from similar columns and dropping redundant columns.  Below is an image of code consolidating columns, including a list of redundant columns and choices for a resolution for redundant column in the comments:
+
+![redundant_columns](Resources/consolidate_columns.png)
+
+
+I then created a dataframed of ratings fore each movie pulled from a csv file also compiled by MovieLens.  This dataframe was merged into the existing dataframe of wiki and kaggle data.
 
 Finally, I exported the merged movies_df and the ratings.csv to a SQL database for use in the hackathon.
 
