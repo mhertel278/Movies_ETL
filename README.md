@@ -23,6 +23,7 @@ The purpose of this project is to extract, transform, and load data about variou
 ![nulls_dups](/Resources/nulls_dups.png)
 - Convert dollar amounts expressed in text (ie $10 billion) to numeric data types
     ![dollars](/Resources/dollars.png)
+######Start Here to CONTINUE REFORMATING######
 
 data forms-such as dates in various formats and dollar amounts represented with words million or billion-were transformed and made more consistent, and data types were corrected. Below is a sample of code used clean the "Length" column, which held the length of each movie listed in various text formats such as "1 hour 15 min" or "120 minutes", creating a new "running_time" column with length given in total minutes in with a numerica datatype.
 
