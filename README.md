@@ -42,7 +42,7 @@ I cleaned the merged dataframes by consolidating data from similar columns and d
 ![redundant_columns](Resources/consolidate_columns.png)
 
 
-I then created a dataframed of ratings fore each movie pulled from a csv file also compiled by MovieLens.  This dataframe was merged into the existing dataframe of wiki and kaggle data.
+I then created a dataframe of ratings fore each movie pulled from a csv file also compiled by MovieLens.  This dataframe was merged into the existing dataframe of wiki and kaggle data.
 
 Finally, I exported the merged movies_df and the ratings.csv to a SQL database for use in the hackathon.  The code used to connect to the database and export each dataframe to a table in the database is shown below:
 
